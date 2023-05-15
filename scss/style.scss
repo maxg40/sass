@@ -1,0 +1,58 @@
+$title-font: normal 24px/1.5 'Open Sans', sans-serif;
+$cool: rgb(5, 43, 11);
+$box-shadow: 3px 2px 1px 3px black;
+@mixin sizes ($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+h1 {
+    background-color: blanchedalmond;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    font: $title-font;
+    color: $cool;
+    
+}
+header {
+    background-color:darkorange;
+    li{
+        background-color: rgb(243, 188, 168);
+        &:hover {
+            transform: scale(1,1);
+            background-color: aliceblue;
+            border-radius: 5px;
+        }
+    }
+}
+section {
+    box-shadow: $box-shadow;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    background-color: coral;
+}
+/* preguntar sobre @import*/
+div {
+    
+    display: flex;
+    justify-content: center;
+
+    .boton {
+    width: 100px;
+    height: 30px;
+    background-color: aliceblue;
+    color: rosybrown;
+    border-radius: 15px;
+    border: 3px inset blanchedalmond;
+    }
+    .aceptar {
+        @extend .boton;
+        background-color: cornflowerblue;
+        color: aquamarine;
+    }
+    .cancelar{
+        @include sizes(200px, 100px)
+    }
+}

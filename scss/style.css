@@ -1,0 +1,50 @@
+h1 {
+  background-color: blanchedalmond;
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  font: normal 24px/1.5 "Open Sans", sans-serif;
+  color: rgb(5, 43, 11);
+}
+
+header {
+  background-color: darkorange;
+}
+header li {
+  background-color: rgb(243, 188, 168);
+}
+header li:hover {
+  transform: scale(1, 1);
+  background-color: aliceblue;
+  border-radius: 5px;
+}
+
+section {
+  box-shadow: 3px 2px 1px 3px black;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  background-color: coral;
+}
+
+/* preguntar sobre @import*/
+div {
+  display: flex;
+  justify-content: center;
+}
+div .boton, div .aceptar {
+  width: 100px;
+  height: 30px;
+  background-color: aliceblue;
+  color: rosybrown;
+  border-radius: 15px;
+  border: 3px inset blanchedalmond;
+}
+div .aceptar {
+  background-color: cornflowerblue;
+  color: aquamarine;
+}
+div .cancelar {
+  width: 200px;
+  height: 100px;
+}/*# sourceMappingURL=style.css.map */
